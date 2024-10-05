@@ -253,7 +253,9 @@ elif pages == "Auto":
     st.title("Auto")
     st.markdown("""
     <p>MammoCare is dedicated to revolutionizing the early detection of breast cancer. Our team comprises medical professionals and AI experts who work together to enhance diagnostic accuracy.</p>
-    """, unsafe_allow_html=True)                      
+    <p>Learn more about our initiatives <a href="https://bcdauto.streamlit.app/" target="_blank">here</a>.</p>
+    """, unsafe_allow_html=True)
+                                    
 
 elif pages == "About Us":
     st.title("About Us")
