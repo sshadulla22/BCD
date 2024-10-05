@@ -7,6 +7,8 @@ import pydicom  # Import pydicom for DICOM file support
 from streamlit_chat import message  # Import the message component for chat
 import requests  # To make HTTP requests to aiXplain API
 import time  # For polling delay
+import matplotlib.pyplot as plt
+from skimage.filters import threshold_multiotsu
 # Set the API key for aiXplain
 API_KEY = '799b8640ed5d2e45959f34bc3adf4f4c45515d0d492d171b8e7f07cd0da48c1e'
 API_URL = 'https://models.aixplain.com/api/v1/execute/64788e666eb56313aa7ebac1'  # aiXplain model URL
@@ -27,47 +29,54 @@ st.markdown(
         background-color: #f4f4f4;
     }
     .hero {
-        background-image: url('https://preview.free3d.com/img/2021/12/3190213534600398410/2yo1z0c2.jpg');
+        background-image: url('https://healthimaging.com/sites/default/files/2022-09/Mammography_radiologist_read_Sectra_2022.png');
         background-size: cover;
         background-position: center;
         height: 800px;
-        border-radius:20px;
+        border-radius: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
         color: white;
+        border: 10px solid black;
+         box-shadow: 0 0 10px rgba(0.1, 0.1, 0.1, 0.9);
     }
     .cta-button {
-        background-color: #E91E63;
-        padding: 10px 20px;
+        background-color: Black;
+        padding: 20px 30px;
         color: white;
-        border-radius: 5px;
+        border-radius: 30px;
         text-decoration: none;
         font-weight: bold;
+        border:10px;
     }
     .cta-button:hover {
-        background-color: #D81B60;
+        background-color: white;
     }
     .section {
         padding: 50px;
-        text-align: center;
+     text-align: justify;
     }
     .feature-box {
         background-color: white;
         padding: 20px;
+        color:black;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
     }
+    
     </style>
     """,
     unsafe_allow_html=True
 )
 
 # Sidebar navigation
+# st.sidebar.image("cancer-3231720_960_720.webp", use_column_width=True)  # Replace with your logo path
 st.sidebar.title("MammoCare")
-pages = st.sidebar.radio("Navigate", ["Home", "Mammogram manual App", "Auto", "About Us", "Contact"])
+pages = st.sidebar.radio("Navigate", ["Home", "Manual Pectoral Muscle Removal", "Auto Pectoral Muscle Removal", "About Us", "Contact"])
+
 
 # Functions for mammogram processing
 def load_image(file_path):
@@ -155,30 +164,48 @@ def query_aixplain_model(user_input):
             return f"Error: API request failed with status code {response.status_code}: {response.text}"
     except Exception as e:
         return f"Exception occurred: {e}"
+    
+    
 
 # Main content of the application
 if pages == "Home":
     # Header
-    st.markdown("<h1 style='text-align: center; color: #E91E63;'>MammoCare</h1>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center;'>Using AI to enhance breast cancer detection and diagnosis.</p>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: #da3a2e;'>MammoCare</h1>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Advanced Mammogram Image Processing</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center;'>AI-Powered Diagnostic Assistance</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center;'>Developed by Silent Echo</p>", unsafe_allow_html=True)
 
     # Hero section
-    st.markdown("""<div class="hero"><div><h2>Advanced Mammogram Image Processing</h2><p>Leverage the power of AI to detect breast cancer early and accurately.</p><a href="#features" class="cta-button">Explore Features</a></div></div>""", unsafe_allow_html=True)
+    st.markdown("""<div class="hero"><div><h1></h1><h3></h3><a href="https://bcdauto.streamlit.app/" class="cta-button">Auto Pectoral Muscle Removal</a></div></div>""", unsafe_allow_html=True)
 
     # About section
-    st.markdown("<div class='section' id='about'><h2>About MammoCare</h2><p>MammoCare is a state-of-the-art mammogram image processing platform, leveraging AI to improve early breast cancer detection and diagnostic accuracy.</p></div>", unsafe_allow_html=True)
+    st.markdown("<div class='section' id='about'><h1>About MammoCare</h1><p> MammoCare is a cutting-edge mammogram image processing platform designed to enhance the clarity and quality of mammogram images through advanced preprocessing techniques. The platform is dedicated to optimizing image clarity, identifying dense regions, and providing healthcare professionals with the detailed visual information necessary for accurate assessments. MammoCare employs manual techniques for pectoral muscle removal, utilizing adjustment methods that user manually define and eliminate the pectoral muscle based on the adjustments. The Auto Pectoral Muscle Removal technique, including depth-first search algorithms and various image processing methods, to achieve efficient and precise muscle segmentation and removal. The integration of these methodologies ensures optimal visualization of breast tissue, leading to enhanced diagnostic reliability. By focusing on high-level image preprocessing, MammoCare empowers healthcare professionals to make informed decisions, ultimately improving patient care in breast health management, also integrated-aixplain AI-Powered Diagnostic Assistance.</p></div>", unsafe_allow_html=True)
 
     # Features section
-    st.markdown("<div class='section' id='features'><h2>Key Features</h2></div>", unsafe_allow_html=True)
-    st.markdown("<div class='feature-box'><h3>AI-Powered Analysis</h3><p>Automatically analyze mammogram images to detect abnormalities with high accuracy.</p></div>", unsafe_allow_html=True)
-    st.markdown("<div class='feature-box'><h3>Image Enhancement</h3><p>Enhance image clarity for better interpretation by medical professionals.</p></div>", unsafe_allow_html=True)
-    st.markdown("<div class='feature-box'><h3>Data Security</h3><p>Secure and confidential processing of patient data, adhering to HIPAA regulations.</p></div>", unsafe_allow_html=True)
+    st.markdown("<div class='section' id='features'><h1>Key Features</h1></div>", unsafe_allow_html=True)
+    st.markdown("<div class='feature-box'><h3 class='feature-box'>Advanced Image Clarity Optimization</h3><p>MammoCare utilizes high-level preprocessing techniques to enhance the clarity and quality of mammogram images. This allows for better visualization of breast tissue, enabling healthcare professionals to make more accurate assessments.</p></div>", unsafe_allow_html=True)
+    st.markdown("<div class='feature-box'><h3 class='feature-box'>Dual Approach to Pectoral Muscle Removal</h3><p> MammoCare employs manual techniques for pectoral muscle removal, utilizing adjustment methods that user manually define and eliminate the pectoral muscle based on the adjustments. The Auto Pectoral Muscle Removal technique, including depth-first search algorithms and various image processing methods, to achieve efficient and precise muscle segmentation and removal.</p></div>", unsafe_allow_html=True)
+    st.markdown("<div class='feature-box'><h3 class='feature-box'>Dense Region Identification</h3><p>MammoCare focuses on identifying dense regions within mammogram images. By highlighting these areas, healthcare professionals can quickly and effectively assess potential abnormalities, facilitating timely and informed decision-making in breast health management.</p></div>", unsafe_allow_html=True)
+    st.markdown("<div class='feature-box'><h3 class='feature-box'>AI-Powered Diagnostic Assistance</h3><p>Integrated with aiXplain, MammoCare offers AI-driven diagnostic assistance, providing healthcare professionals with valuable insights and recommendations based on advanced algorithms. This feature enhances diagnostic accuracy and supports clinicians in making well-informed decisions regarding patient care.</p></div>", unsafe_allow_html=True)
+
+    # # Sidebar for user input
+    # st.sidebar.header("AI Model Interaction")
+    # user_input = st.sidebar.text_input("Enter diagnosis request or question for the AI model", key="user_input")  # Unique key provided
+    # if st.sidebar.button("Ask"):
+    #     if user_input.strip():  # Check if the input is not empty
+    #         with st.spinner("Processing your request..."):
+    #             response = query_aixplain_model(user_input)
+    #         st.sidebar.success(response)
+    #     else:
+    #         st.sidebar.error("Please enter a valid request or question.")
+
+
 
     # # Footer
     # st.markdown("<footer style='text-align: center; padding: 20px; background-color: #E91E63; color: white;'>© 2024 MammoCare. All rights reserved.</footer>", unsafe_allow_html=True)
 
-elif pages == "Mammogram manual App":
-    st.title("Mammogram Image Processing")
+elif pages == "Manual Pectoral Muscle Removal":
+    st.title("Manual Pectoral Muscle Removal & Dense Regoin Visualization")
     # Show Instructions at the top left and expand by default
     with st.expander("Instructions", expanded=True):
         st.markdown("""    
@@ -244,23 +271,31 @@ elif pages == "Mammogram manual App":
             st.image(highest_dense_image, caption="Highest Dense Region", use_column_width=True)
 
         # User input for AI model
-        user_input = st.text_input("Enter your diagnosis request or question for the AI model")
-        if st.button("Submit"):
+user_input = st.text_input("Enter your diagnosis request or question for the AI model")
+if st.button("Submit"):
+    if user_input.strip():  # Check if the input is not empty
+        with st.spinner("Processing your request..."):
             response = query_aixplain_model(user_input)
-            st.success(response) 
+        st.success(response)
+    else:
+        st.error("Please enter a valid request or question.")
 
-elif pages == "Auto":
-    st.title("Auto")
+elif pages == "Auto Pectoral Muscle Removal":
+    st.title("Automated Pectoral Muscle Removal")
     st.markdown("""
-    <p>MammoCare is dedicated to revolutionizing the early detection of breast cancer. Our team comprises medical professionals and AI experts who work together to enhance diagnostic accuracy.</p>
-    <p>Learn more about our initiatives <a href="https://bcdauto.streamlit.app/" target="_blank">here</a>.</p>
+    <p>The Auto Pectoral Muscle Removal technique, including depth-first search algorithms and various image processing methods, to achieve efficient and precise muscle segmentation and removal.</p>
+    <br><br><p><a href="https://bcdauto.streamlit.app/" class="cta-button">Auto Pectoral Muscle Removal</a></p><br><br>
     """, unsafe_allow_html=True)
-                                    
+    
+                  
 
 elif pages == "About Us":
     st.title("About Us")
     st.markdown("""
-    <p>MammoCare is dedicated to revolutionizing the early detection of breast cancer. Our team comprises medical professionals and AI experts who work together to enhance diagnostic accuracy.</p>
+    <p>Here's an updated version of your description that focuses on high-level image preprocessing for mammogram images while incorporating your techniques for pectoral muscle removal:
+MammoCare is a cutting-edge mammogram image processing platform designed to enhance the clarity and quality of mammogram images through advanced preprocessing techniques. The platform is dedicated to optimizing image clarity, identifying dense regions, and providing healthcare professionals with the detailed visual information necessary for accurate assessments.<br>
+MammoCare utilizes manual techniques for pectoral muscle removal, employing methods such as **Canny edge detection** and **Hough transforms** to define and eliminate the pectoral muscle based on edge and geometric analysis. These manual approaches are complemented by automated techniques that utilize depth-first search algorithms and various image processing methods to achieve efficient and accurate muscle segmentation.<br>
+The integration of these methodologies ensures optimal visualization of breast tissue, leading to enhanced diagnostic reliability. By focusing on high-level image preprocessing, MammoCare empowers healthcare professionals to make informed decisions, ultimately improving patient care in breast health management.</p>
     """, unsafe_allow_html=True)
 
 elif pages == "Contact":
@@ -272,4 +307,4 @@ elif pages == "Contact":
 
 
 # Footer
-st.markdown("<footer style='text-align: center; padding: 20px; background-color: #E91E63; color: white;'>© 2024 MammoCare. All rights reserved.</footer>", unsafe_allow_html=True)
+st.markdown("<footer style='text-align: center; padding: 20px; background-color:Black; color: white;'>© 2024 MammoCare. All rights reserved.</footer>", unsafe_allow_html=True)
