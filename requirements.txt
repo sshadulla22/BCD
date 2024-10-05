@@ -1,3 +1,4 @@
+streamlit
 opencv-python-headless
 numpy
 pillow
@@ -6,4 +7,3 @@ streamlit-chat
 requests
 matplotlib
 scikit-image
-streamlit
