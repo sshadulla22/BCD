@@ -1,4 +1,5 @@
 opencv-python
+opencv-python-headless  # Include this for environments without GUI (optional)
 numpy
 streamlit
 Pillow
