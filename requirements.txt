@@ -1,8 +1,8 @@
-opencv-python
-opencv-python-headless  # Include this for environments without GUI (optional)
-numpy
 streamlit
+opencv-python
+numpy
+pandas
+matplotlib
+scikit-learn
+scipy
 Pillow
-pydicom
-streamlit-chat
-requests
