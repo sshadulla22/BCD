@@ -172,7 +172,7 @@ if pages == "Home":
     # Header
     st.markdown("<h1 style='text-align: center; color: #da3a2e;'>MammoCare</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center;'>Advanced Mammogram Image Processing</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center;'>AI-Powered Diagnostic Assistance</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center;'>aixplain AI Model Integrated</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center;'>Developed by Silent Echo</p>", unsafe_allow_html=True)
 
     # Hero section
@@ -281,7 +281,7 @@ if st.button("Submit"):
         st.error("Please enter a valid request or question.")
 
 elif pages == "Auto Pectoral Muscle Removal":
-    st.title("Automated Pectoral Muscle Removal")
+    st.title("Automated Pectoral Muscle Removal & Cancer Detection")
     st.markdown("""
     <p>The Auto Pectoral Muscle Removal technique, including depth-first search algorithms and various image processing methods, to achieve efficient and precise muscle segmentation and removal.</p>
     <br><br><p><a href="https://bcdauto.streamlit.app/" class="cta-button">Auto Pectoral Muscle Removal</a></p><br><br>
@@ -301,10 +301,10 @@ The integration of these methodologies ensures optimal visualization of breast t
 elif pages == "Contact":
     st.title("Contact Us")
     st.markdown("""
-    <p>If you have any questions or need support, please reach out to us at <a href="mailto:support@mammocare.com">support@mammocare.com</a>.</p>
+    <p>If you have any questions or need support, please reach out to us at <a href="mailto:silentecho@mammocare.com">silentecho@mammocare.com</a>.</p>
     """, unsafe_allow_html=True)
 
 
 
 # Footer
-st.markdown("<footer style='text-align: center; padding: 20px; background-color:Black; color: white;'>© 2024 MammoCare. All rights reserved.</footer>", unsafe_allow_html=True)
+st.markdown("<footer style='text-align: center; padding: 20px; background-color:Black; color: white;'>© 2024 MammoCare(Silent Echo). All rights reserved.</footer>", unsafe_allow_html=True)
