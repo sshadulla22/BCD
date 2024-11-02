@@ -306,7 +306,7 @@ elif pages == "Treatment Centers":
     st.title("Search for treatment centers based on country, center name, or town.")
     
     # Sidebar for search filters
-    st.sidebar.header("Filter Options")
+    st.sidebar.header("Find Nearest Center")
     country_filter = st.sidebar.text_input("Search by Country", "")
     centre_filter = st.sidebar.text_input("Search by Center Name", "")
     town_filter = st.sidebar.text_input("Search by Town", "")
