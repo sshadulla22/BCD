@@ -22,6 +22,21 @@ headers = {
 # Set page configuration
 st.set_page_config(page_title="MammoCare", page_icon="🩺", layout="centered")
 
+#Load CSV DATA----Shadulla Shaikh Date of Update 02-11-2024 Time: 18:40
+@st.cache_data
+def load_data():
+    try:
+        return pd.read_csv('treatment_centers.csv', encoding='utf-8')
+    except UnicodeDecodeError:
+        return pd.read_csv('treatment_centers.csv', encoding='ISO-8859-1')
+    except Exception as e:
+        st.error(f"Error loading data: {e}")
+        return None  # Return None if there's an error
+
+# Load the data from CSV fible Updated by Shadulla Shaikh 02-11-2024 Time: 18:42
+data = load_data()
+
+
 # Add CSS styles for better formatting
 st.markdown(
     """
