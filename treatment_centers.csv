@@ -1,0 +1,254 @@
+No.,Country,Centres,Town
+1,Austria,Brustgesundheitszentrum des Tumorzentrums Ober�sterreich,Linz
+2,Austria,"Medical University Innsbruck, Dept. of Gynecology and Obstetrics",Innsbruck
+3,Austria,KH Barmherzige Schwestern Linz,Linz
+4,Austria,Breast Center at Dept. of Senology - Paracelsus Medical University of Salzburg,Salzburg
+5,Austria,Medical University Vienna - Breast Health Center,Vienna
+1,Belgium,Onze Lieve Vrouwziekenhuis,Aalst
+2,Belgium,Breast Centre Voorkempen,Brasschaat
+3,Belgium,CHU St. Pierre,Brussels
+4,Belgium,Cliniques universitaires Saint-Luc / Institut Roi Albert II,Brussels
+5,Belgium,AZ Groeninge,Kortrijk
+6,Belgium,CHR Citadelle,Li�ge
+7,Belgium,Sint Augustinus Hospital,Wilrijk
+8,Belgium,Breast Clinic ZNA Middelheim,Antwerp
+9,Belgium,AZ Sint-Jan AV Hospital,Brugge
+10,Belgium,AZ Sint-Lucas Brugge,Brugge
+11,Belgium,Chirec,Brussels
+12,Belgium,Erasme Hospital Free University of Brussels,Brussels
+13,Belgium,H�pitaux Iris Sud - Ixelles,Brussels
+14,Belgium,AZ Sint-Blasius,Dendermonde
+15,Belgium,Antwerp University Hospital - University of Antwerpen,Edegem
+16,Belgium,AZ Maria Middelares,Gent
+17,Belgium,University Hospital Ghent,Ghent
+18,Belgium,CH Jolimont,Haine Saint Paul
+19,Belgium,Jessa Hospital,Hasselt
+20,Belgium,University Hospitals Leuven,Leuven
+21,Belgium,Centre Hospitalier Universitaire du Sart-Tilman,Li�ge
+22,Belgium,CHC - Centre Hospitalier Chr�tien,Li�ge
+23,Belgium,CHU UCL NAMUR - Sainte Elisabeth,Namur
+24,Belgium,Clinique Saint Pierre,Ottignies-Louvain la Neuve
+1,Bosnia and Herzegovina,"University Clinical Center Banja Luka, Breast Center",Banja Luka
+2,Bosnia and Herzegovina,Surgical Oncology/Clinical Center Sarajevo,Sarajevo
+1,Bulgaria,Hospital Sv. Georgi,Plovdiv
+2,Bulgaria,Alexandrovska Hospital,Sofia
+3,Bulgaria,Military Medical Academy Sofia,Sofia
+4,Bulgaria,University Hospital 'Tsaritza Yoanna - ISUL',Sofia
+1,Croatia,Clinical Hospital Centre Rijeka,Rijeka
+2,Croatia,"University Hospital for Tumors, University Hospital Center Sestre Milosrdnice",Zagreb
+1,Cyprus,American Breast Center,Nicosia
+2,Cyprus,Nicosia General Hospital/Bank of Cyprus Oncology Centre,Nicosia
+3,Cyprus,The Breast Center of Cyprus,Nicosia
+1,Czechia,Masaryk Memorial Cancer Insitute,Brno
+1,Estonia,North Estonian Regional Centre,Tallinn
+1,France,"Groupe Hospitalier Avicenne-Jean Verdier, CHU de Paris-Seine-Saint-Denis",Bobigny
+2,France,Centre Oscar Lambret,Lille Cedex
+3,France,H�pital Saint-Louis,Paris
+1,Germany,Brustzentrum Marienhospital Bottrop,Bottrop
+2,Germany,"Brustkrebszentrum der UMG,University Hospital of the University of G�ttingen",G�ttingen
+3,Germany,Marienhospital Aachen - Brustcentrum,Aachen
+4,Germany,Universitaets-Brustzentrum Franken (UBF) - Frauenklinik at Universitaetsklinikum Erlangen,Erlangen
+5,Germany,Agaplesion Markus Krankenhaus,Frankfurt
+6,Germany,Breast Unit - University of Heidelberg,Heidelberg
+7,Germany,Breast Center at Gynaecology and Obstetrics - Klinikum St. Georg,Leipzig
+8,Germany,Interdisciplinary Breast Center (IBZ) at Frauenklinik RdI Technische Universitaet Muenchen,Muenchen
+1,Greece,'Alexandra' Hospital - Athens University Medical School,Athens
+2,Greece,Athens Medical Center,Athens
+3,Greece,Prolipsis Breast Unit,Athens
+4,Greece,REA Maternity Hospital,Athens
+5,Greece,IASO,"Marousi, Athens"
+6,Greece,Mitera Hospital S.A.,"Marousi, Athens"
+7,Greece,Metaxa Cancer Hospital,Piraeus
+8,Greece,Genesis Hospital,Thessaloniki
+1,Hungary,National Institute of Oncology,Budapest
+2,Hungary,University of Szeged - Dept. of Oncotherapy,Szeged
+1,Ireland,University Hospital Waterford,Waterford City
+1,Italy,Azienda Ospedaliero-Universitaria di Bologna Policlinico S.Orsola-Malpighi,Bologna
+2,Italy,Fondazione Poliambulanza,Brescia
+3,Italy,Istituto Clinico S. Anna,Brescia
+4,Italy,Breast Centre AULSS 9 Scaligera c/o Dept. of Medical Oncology Mater Salutis Hospital,Legnago
+5,Italy,Breast Center Humanitas Cancer Center,Milan
+6,Italy,European Institute of Oncology,Milano
+7,Italy,Senologia Multimedica,Milano
+8,Italy,Breast Centre Humanitas Catania,Misterbianco
+9,Italy,G. Bernabeo Hospital,Ortona
+10,Italy,Fondazione IRCCS Policlinico San Matteo,Pavia
+11,Italy,Infermi Hospital - Rimini - Ausl Romagna,Rimini
+12,Italy,San Giovanni Addolorata Hospital,Rome
+13,Italy,ASUGI - SSD Breast Unit,Trieste
+14,Italy,San Donato Hospital - Azienda USL TOSCANA SUDEST Arezzo,Arezzo
+15,Italy,Santa Maria Annunziata Hospital/Breast Unit / Azienda Sanitaria di Firenze,Bagno a Ripoli
+16,Italy,Breast Unit ASL BA - Osp. S. Paolo - Bari,Bari
+17,Italy,Istituto Tumori 'Giovanni Paolo II' - I.R.C.C.S. Bari,Bari
+18,Italy,Istituto Clinico Humanitas Gavazzeni,Bergamo
+19,Italy,Spedali Civili - Breast Unit,Brescia
+20,Italy,Ospedale Perrino,Brindisi
+21,Italy,"Candiolo Cancer Institute - FPO, IRCCS",Candiolo
+22,Italy,Ospedale di Carpi,Carpi
+23,Italy,Humanitas Mater Domini,Castellanza
+24,Italy,Unit� di Senologia Ospedale Valduce,Como
+25,Italy,Azienda Istituti Ospitalieri di Cremona,Cremona
+26,Italy,Azienda Ospedaliero Universitaria Careggi - Firenze,Firenze
+27,Italy,San Martino Polyclinic Hospital,Genova
+28,Italy,Ospedale Civile San Salvatore,L'Aquila
+29,Italy,ASST Mantova,Mantova
+30,Italy,IRCCS Ospedale San Raffaele,Milano
+31,Italy,University-Hospital Polyclinic,Modena
+32,Italy,"Centro Donna, Ospedale Montecchio Maggiore",Montecchio Maggiore
+33,Italy,Policlinico di Monza,Monza
+34,Italy,San Gerardo Hospital,Monza
+35,Italy,Ospedale Sacro Cuore Don Calabria,Negrar
+36,Italy,Azienda Ospedaliero-Universitaria di Parma,Parma
+37,Italy,Salvatore Maugeri Foundation,Pavia
+38,Italy,Azienda Ospedaliera di Perugia,Perugia
+39,Italy,Ospedale Civile 'Guglielmo Da Saliceto',Piacenza
+40,Italy,Azienda Ospedaliero-Universitaria Di Pisa - Ospedale S. Chiara,Pisa
+41,Italy,Ospedale di Prato ASL Centro,Prato
+42,Italy,Arcispedale Santa Maria Nuova,Reggio Emilia
+43,Italy,A.O. San Camillo - Forlanini,Rome
+44,Italy,Campus Bio-Medico University Hospital,Rome
+45,Italy,Policlinico Militare Celio,Rome
+46,Italy,S. Andrea Hospital Sapienza Rome University,Rome
+47,Italy,Regina Pacis Clinic,San Cataldo
+48,Italy,Azienda Ospedaliera Sant'Anna,San Fermo della Battaglia
+49,Italy,Casa Sollievo della Sofferenza,San Giovanni Rotondo
+50,Italy,Civic Hospital of Sanremo ASL 1 Imperiese,Sanremo
+51,Italy,Asst Bergamo Est,Seriate
+52,Italy,Azienda Ospedaliera 'Santa Maria' Terni,Terni
+1,Latvia,"Pauls Stradins Clinical University Hospital, Breast Unit",Riga
+2,Latvia,Riga East University Hospital/Latvian Oncology Centre,Riga
+1,Lithuania,Hospital of Lithuanian University of Health Sciences,Kaunas
+1,Malta,"Agatha Breast Unit, Mater Dei Hospital","Tal Qroqq, Msida"
+1,Netherlands,The Netherlands Cancer Institute - Antoni van Leeuwenhoek Hospital,Amsterdam
+2,Netherlands,Alexander Monro Breast Cancer Hospital,"Bilthoven, Utrecht"
+3,Netherlands,University Medical Centre Groningen,Groningen
+4,Netherlands,Canisius Wilhelmina Ziekenhuis,Nijmegen
+1,Poland,Internal Affairs Hospital,Bialystok
+2,Poland,The Maria Sklodowska- Curie Memorial Cancer Center and Institute of Oncology,Warsaw
+1,Portugal,Champalimaud Foundation/Champalimaud Clinical Center,Lisbon
+2,Portugal,Centro de Mama - Hospital de S. Jo�o,Porto
+3,Portugal,Hospital Garcia de Orta,Almada
+4,Portugal,Centro Hospitalar Barreiro-Montijo,Barreiro
+5,Portugal,hospital de Braga,braga
+6,Portugal,Centro Hospitalar e Universit�rio de Coimbra,Coimbra
+7,Portugal,Hospital Espirito Santo Evora,Evora
+8,Portugal,Centro Hospitalar Lisboa Central,Lisbon
+9,Portugal,Instituto Portugu�s de Oncologia de Lisboa,Lisbon
+10,Portugal,Instituto Portugues de Oncologia do Porto,Porto
+11,Portugal,"Unidade de Senologia - Hospital de Santar�m, EPE",Santar�m
+12,Portugal,"Centro Hospitalar de Set�bal, E.P.E.",Set�bal
+1,Romania,SANADOR,Bucharest
+2,Romania,�Prof. Dr. Ion Chiricuta� Institute of Oncology,Cluj-Napoca
+1,Serbia,Clinical Centre 'Kragujevac',Kragujevac
+1,Slovakia,St. Agatha Breast Centre ProCare,Podkonice
+2,Slovenia,The Institute of Oncology Ljubljana,Ljubljana
+1,Spain,Hospital Universitario La Paz,Madrid
+2,Spain,Hospital Universitario Cruces,Baracaldo
+3,Spain,Hospital del Mar,Barcelona
+4,Spain,MD Anderson Cancer Center. Madrid. Espa�a,Madrid
+5,Spain,Hospital Universitario De Salamanca,Salamanca
+6,Spain,Hospital Universitari i Politecnic La Fe,Valencia
+1,Sweden,Karolinska University Hospital,Stockholm
+1,Switzerland,Brustzentrum Mittelland Kantonsspit�ler Aarau/Olten,Aarau
+2,Switzerland,Brustzentrum Bern,Bern
+3,Switzerland,University Hospital Berne,Berne
+4,Switzerland,Centro di Senologia della Svizzera Italiana,Viganello - Lugano
+5,Switzerland,Clinique de Genolier,Genolier
+6,Switzerland,Brust-Zentrum AG,Z�rich
+1,Turkey,Istanbul Florence Nightingale Hospital,Istanbul
+2,Turkey,Dr. Abdurrahman Yurtaslan Ankara Oncology Training and Research Hospital,Ankara
+3,Turkey,G�lhane Training and Research Hospital,Ankara
+4,Turkey,Guven Hospital,Ankara
+5,Turkey,Medicana International Ankara Hospital,Ankara
+6,Turkey,"Istanbul University, Institute of Oncology, Surgical Oncology Unit","Capa, Istanbul"
+7,Turkey,Acibadem Altunizade Hospital,Istanbul
+8,Turkey,Acibadem Research Institiute of Senology (Maslak Hospital),Istanbul
+9,Turkey,BHT CLINIC,ISTANBUL
+10,Turkey,Haseki Research and Training Hospital,Istanbul
+11,Turkey,Istanbul Medeniyet University,Istanbul
+12,Turkey,Istanbul Onkoloji Hastanesi,Istanbul
+13,Turkey,Istanbul University Cerrahpasa Medical Faculty Breast Center,Istanbul
+14,Turkey,Liv Hospital Ulus,Istanbul
+15,Turkey,Okan University,Istanbul
+16,Turkey,Anadolu Medical Center,Kocaeli
+17,Turkey,Kocaeli University School of Medicine,Kocaeli
+18,Turkey,Marmara University Hospital Breast Center,"Pendik, Istanbul"
+19,Turkey,Zonguldak Bulent Ecevit University The School of Medicine,Zonguldak
+1,Ukraine,Innovacia Cancer Center,Kiev
+2,Ukraine,Verum Expert Clinic,Kiev
+3,Ukraine,Innovacia Cancer Center,Lyutizh
+4,Ukraine,Mariupol Cancer Center,Mariupol
+5,Ukraine,LISOD Hospital of Israeli Oncology,Plyuty
+1,United Kingdom of Great Britain and Northern Ireland,Ipswich Hospital NHS,Ipswich
+2,United Kingdom of Great Britain and Northern Ireland,Guy's & St. Thomas' NHS Foundation Trust,London
+3,United Kingdom of Great Britain and Northern Ireland,St Helens and Knowsley Teaching Hospital,St Helens
+1,Egypt,Alexandria Univerisity Hospital,Alexandria
+2,Egypt,Alfa Cure Oncology Center,Cairo
+3,Egypt,Cairo Oncology Center,Giza
+1,South Africa,"Groote Schuur Academic Hospital, Department of Surgery, J46-69 Old Main Building",Cape Town
+2,South Africa,Chris Hani Baragwanath Academic Hospital,Johannesburg
+3,South Africa,Helen Joseph Breast Care Clinic,Johannesburg
+1,Sudan,Khartoum Breast Care Centre,Khartoum
+2,Sudan,Khartoum Teaching Hospital,Khartoum
+1,Tanzania,Muhimbili National Hospital,Dar Es Salaam
+1,Tunisia,F. Hached University Teaching Hospital,Sousse
+2,Tunisia,International HANNIBAL Clinic,Tunis
+1,Armenia,National Center of Oncology,Yerevan
+1,Azerbaijan,MOM,Baku
+1,China,Guilin Traditional Chinese Medicine Hospital,Guilin
+1,India,"Max Institute of Cancer Care, Max Healthcare",Delhi
+2,India,Basavatarakam Indo American Cancer Hospital and Research Institute,"Hyderabad, Telangana"
+3,India,Tata Medical Center,"Kolkata, West Bengal"
+4,India,"Netaji Subhas Chandra Bose Cancer Hospital, Institute of Breast Diseases Kolkata",Kolkata
+5,India,Chennai Breast Centre,"MRC Nagar, Tamilnadu"
+6,India,Tata Memorial Centre,"Mumbai, Maharashtra"
+7,India,"Jehangir Breast Care Centre, Jehangir Hospital","Pune, Maharashtra"
+8,India,Prashanti Cancer Care Mission,Pune
+9,India,Ruby Hall Clinic,Pune
+1,Iraq,Pink Line Breast Center,Erbil
+1,Israel,Shaare Zedek Medical Centre,Jerusalem
+1,Japan,Tokyo-West Tokushukai Hospital,Matsubara
+2,Japan,Kyorin University Hospital,Mitaka
+3,Japan,Showa University Hospital,Tokyo
+1,Jordan,King Hussain Medical Center,Amman
+1,Lebanon,Hotel Dieu de France University Hospital,Beirut
+1,Pakistan,Aga Khan University,"Karachi, Sindh"
+1,Australia,Western Breast Clinic,Henley Beach SA
+2,Australia,Breast Cancer Research Centre - WA,Perth
+1,Argentina,Instituto de Oncolog�a Angel H Roffo Universidad de Buenos Aires,Buenos Aires CABA
+2,Argentina,Hospital Brit�nico de Buenos Aires,Buenos Aires
+3,Argentina,Instituto Alexander Fleming,Buenos Aires
+4,Argentina,Centro Mamario del Hospital Universitario Austral,"Derqui, Partido de Pilar, Buenos Aires"
+5,Argentina,Instituto Ginecomamario,Mendoza
+6,Argentina,Centro De Mastologia,"Rosario, Santa Fe"
+7,Argentina,IMGO Breast Unit. Instituto Modelo Privado de Ginecolog�a y Obstetricia,Cordoba
+8,Argentina,Breast Clinica de la Mama and Italian Hospital,"La Plata, Buenos Aires"
+9,Argentina,Unidad de Mastolog�a de Grupo Oro�o,Rosario
+10,Argentina,Unidad de mastologia de la secretaria de salud p�blica municipalidad de Rosario (CEMAR),ROSARIO
+1,Brazil,Santa Casa de Belo Horizonte,"Belo Horizonte, MG"
+2,Brazil,Hospital Nossa Senhora das Gra�as,Curitiba
+3,Brazil,Araujo Jorge Hospital,Goiania
+4,Brazil,MAMARJ. CLINICA DE MASTOLOGIA,Nova Igua�u
+5,Brazil,Hospital Moinhos de Vento,PORTO ALEGRE
+6,Brazil,Hospital S�o Lucas PUCRS,Porto Alegre
+7,Brazil,HOSPITAL UNIVERSIT�RIO OSWALDO CRUZ,Recife
+8,Brazil,Hospital da Mulher Maria Luzia dos Santos,"Salvador, Bahia"
+9,Brazil,A Benefic�ncia Portuguesa de S�o Paulo,S�o Paulo
+10,Brazil,Hospital S�rio-Liban�s,S�o Paulo
+11,Brazil,Instituto Brasileiro de Controle do Cancer - IBCC/ S�o Camilo Oncologia,S�o Paulo
+12,Brazil,Perola Byington Hospital,S�o Paulo
+13,Brazil,Instituto Conquistense de Mastologia - IMASTO,Vit�ria da Conquista
+1,Chile,A. Lopez Perez Foundation Comprehensive Cancer Center,Santiago
+2,Chile,"Centro de C�ncer Nuestra Se�ora de la Esperanza, Pontificia Universidad Cat�lica de Chile",Santiago
+1,Colombia,Clinica De Occidente S.A,Cali
+2,Colombia,Clinica Medellin,Medellin
+3,Colombia,Instituto Cancerologia Clinica Las Americas,Medellin
+1,Ecuador,Centro Oncologico Integral (CENONI),Guayaquil
+1,Mexico,Institute of Breast Disease FUCAM A.C.,M�xico City
+2,Mexico,Unidad De Cancerologia,"Zapopan, Guadalajara Jalisco"
+1,Peru,CLINICA ONCOSALUD - AUNA,LIMA
+1,Peru,Centro Oncol�gico ALIADA,Lima
+1,Uruguay,Hospital Central de las Fuerzas Armadas/ HCFFAA/,Montevideo
+2,Uruguay,BRITISH HOSPITAL OF MONTEVIDEO,MONTEVIDEO
+1,United States of America,Bellingham Regional Breast Center,"Bellingham, Washington"
+2,United States of America,Smilow Cancer Hospital at Yale-New Haven,"New Haven, Connecticut"
