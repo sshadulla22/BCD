@@ -91,7 +91,7 @@ st.markdown(
 # Sidebar navigation
 # st.sidebar.image("cancer-3231720_960_720.webp", use_column_width=True)  # Replace with your logo path
 st.sidebar.title("MammoCare")
-pages = st.sidebar.radio("Navigate", ["Home", "Manual Pectoral Muscle Removal", "Auto Pectoral Muscle Removal","Treatment Centers", "About Us", "Contact"])
+pages = st.sidebar.radio("Navigate", ["Home", "Manual Pectoral Muscle Removal", "Auto Pectoral Muscle Removal","Treatment Centers","How to Use This Software", "About Us", "Contact"])
 
 
 # Functions for mammogram processing
@@ -349,7 +349,40 @@ elif pages == "Treatment Centers":
     st.subheader("Number of Treatment Centers by Town")
     st.bar_chart(town_counts.set_index('Town'))
 
+elif pages == "How to Use This Software":
+    # Page title
+    st.title("How to Use This Software")
     
+    # Custom CSS for styling the video container
+    st.markdown("""
+        <style>
+            .video-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80vh;  /* Adjust height to fit screen */
+                background-color: #f9f9f9;  /* Light background */
+                border: 1px solid #e0e0e0; /* Border around video */
+                border-radius: 8px; /* Rounded corners */
+                padding: 20px;  /* Padding around video */
+            }
+        </style>
+    """, unsafe_allow_html=True)
+    
+    st.write("Watch the tutorial video below to learn how to use this software effectively.")
+
+    # YouTube video embedding with autoplay and mute enabled
+    youtube_video_id = "9SE6B0h-4-Q"  # Replace with your actual YouTube video ID
+    video_file_path = f"https://www.youtube.com/embed/{youtube_video_id}?autoplay=1&mute=1"
+
+    # Embed video in a full-width container
+    st.markdown(f"""
+        <div class="video-container">
+            <iframe width="100%" height="100%" src="{video_file_path}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    """, unsafe_allow_html=True)
+    
+    st.write("For more information, visit our documentation.")    
                   
 
 elif pages == "About Us":
