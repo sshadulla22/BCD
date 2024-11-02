@@ -8,6 +8,7 @@ from streamlit_chat import message  # Import the message component for chat
 import requests  # To make HTTP requests to aiXplain API
 import time  # For polling delay
 import matplotlib.pyplot as plt
+import pandas as pd
 from skimage.filters import threshold_multiotsu
 # Set the API key for aiXplain
 API_KEY = '799b8640ed5d2e45959f34bc3adf4f4c45515d0d492d171b8e7f07cd0da48c1e'
@@ -75,7 +76,7 @@ st.markdown(
 # Sidebar navigation
 # st.sidebar.image("cancer-3231720_960_720.webp", use_column_width=True)  # Replace with your logo path
 st.sidebar.title("MammoCare")
-pages = st.sidebar.radio("Navigate", ["Home", "Manual Pectoral Muscle Removal", "Auto Pectoral Muscle Removal", "About Us", "Contact"])
+pages = st.sidebar.radio("Navigate", ["Home", "Manual Pectoral Muscle Removal", "Auto Pectoral Muscle Removal","Treatment Centers", "About Us", "Contact"])
 
 
 # Functions for mammogram processing
@@ -286,6 +287,53 @@ elif pages == "Auto Pectoral Muscle Removal":
     <p>The Auto Pectoral Muscle Removal technique, including depth-first search algorithms and various image processing methods, to achieve efficient and precise muscle segmentation and removal.</p>
     <br><br><p><a href="https://bcdauto.streamlit.app/" class="cta-button">Auto Pectoral Muscle Removal</a></p><br><br>
     """, unsafe_allow_html=True)
+elif pages == "Treatment Centers":
+    st.title("Search for treatment centers based on country, center name, or town.")
+    
+    # Sidebar for search filters
+    st.sidebar.header("Filter Options")
+    country_filter = st.sidebar.text_input("Search by Country", "")
+    centre_filter = st.sidebar.text_input("Search by Center Name", "")
+    town_filter = st.sidebar.text_input("Search by Town", "")
+
+    # Initialize a boolean mask for filtering
+    mask = pd.Series([True] * len(data))  # Start with all True values
+
+    # Apply filters
+    if country_filter:
+        mask &= data['Country'].str.contains(country_filter, case=False, na=False)
+    if centre_filter:
+        mask &= data['Centre'].str.contains(centre_filter, case=False, na=False)
+    if town_filter:
+        mask &= data['Town'].str.contains(town_filter, case=False, na=False)
+
+    # Filtered data
+    filtered_data = data[mask]
+
+    # Display results in the main area
+    st.subheader("Search Results")
+    if not filtered_data.empty:
+        st.write(f"Found {len(filtered_data)} center(s):")
+        st.dataframe(filtered_data)  # Display results in a table format
+    else:
+        st.warning("No centers found. Please refine your search.")
+
+    # Aggregation for graph
+    country_counts = data['Country'].value_counts().reset_index()
+    country_counts.columns = ['Country', 'Number of Centers']
+
+    # Bar chart for countries with highest treatment centers
+    st.subheader("Number of Treatment Centers by Country")
+    st.bar_chart(country_counts.set_index('Country'))
+
+    # Aggregation for towns
+    town_counts = data['Town'].value_counts().reset_index()
+    town_counts.columns = ['Town', 'Number of Centers']
+
+    # Bar chart for towns with highest treatment centers
+    st.subheader("Number of Treatment Centers by Town")
+    st.bar_chart(town_counts.set_index('Town'))
+
     
                   
 
