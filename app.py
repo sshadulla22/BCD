@@ -373,7 +373,7 @@ elif pages == "How to Use This Software":
 
     # YouTube video embedding with autoplay and mute enabled
     youtube_video_id = "9SE6B0h-4-Q"  # Replace with your actual YouTube video ID
-    video_file_path = f"https://www.youtube.com/embed/{youtube_video_id}?autoplay=1&mute=1"
+    video_file_path = f""
 
     # Embed video in a full-width container
     st.markdown(f"""
