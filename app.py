@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from skimage.filters import threshold_multiotsu
 # Set the API key for aiXplain
-API_KEY = '799b8640ed5d2e45959f34bc3adf4f4c45515d0d492d171b8e7f07cd0da48c1e'
-API_URL = 'https://models.aixplain.com/api/v1/execute/64788e666eb56313aa7ebac1'  # aiXplain model URL
+API_KEY = 'db1afd683a1d1bbead43d878ce7816c9b17ca9f2b5cd5c60c556665056697e6f'
+API_URL = 'https://models.aixplain.com/api/v1/execute/6414bd3cd09663e9225130e8'  # aiXplain model URL
 
 headers = {
     "Authorization": f"Bearer {API_KEY}",
