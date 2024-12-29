@@ -187,7 +187,7 @@ def query_aixplain_model(user_input):
 if pages == "Home":
     # Header
     st.markdown("<h1 style='text-align: center; color: #da3a2e;'>MammoCare</h1>", unsafe_allow_html=True)
-    st.markdown("<h2 style='text-align: center;'>Advanced Mammogram Image Processing</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Simplifying Breast Cancer Detection by Removing Unwanted Artifacts</h2>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center;'>aixplain AI Model Integrated</p>", unsafe_allow_html=True)
     st.markdown("<p style='text-align: center;'>Developed by Silent Echo</p>", unsafe_allow_html=True)
 
